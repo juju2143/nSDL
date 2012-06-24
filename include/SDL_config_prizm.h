@@ -23,16 +23,16 @@
 #ifndef _SDL_config_prizm_h
 #define _SDL_config_prizm_h
 
-//#include <os.h>
+#include <STD_syscalls.h>
 
 /* General platform specific identifiers */
 #include "SDL_platform.h"
 
 #define PZM_DEBUG	0
-#define PZM_MSGBOX_ERROR	1
-#define DEBUG_BUILD	1
-#define DEBUG_VIDEO	1
-#define DEBUG_ERROR	1
+#define PZM_MSGBOX_ERROR	0
+#define DEBUG_BUILD	0
+#define DEBUG_VIDEO	0
+#define DEBUG_ERROR	0
 
 #define PSDL_VERSION	"0.0.1"
 
@@ -51,19 +51,19 @@
 /* Useful headers */
 #define HAVE_STDIO_H	1
 #define HAVE_STDLIB_H	1
-//#define HAVE_STDARG_H	1
+#define HAVE_STDARG_H	1
 //#define HAVE_STRING_H	1
 //#define HAVE_CTYPE_H	1
-//#define HAVE_STDINT_H 1
+#define HAVE_STDINT_H 1
 
 /* C library functions */
 #define HAVE_MALLOC	1
-#define HAVE_CALLOC	1
-#define HAVE_REALLOC	1
-#define HAVE_FREE	1
+//#define HAVE_CALLOC	1
+//#define HAVE_REALLOC	1
+//#define HAVE_FREE	1
 #define HAVE_MEMSET	1
 #define HAVE_MEMCPY	1
-#define HAVE_MEMMOVE	1
+//#define HAVE_MEMMOVE	1
 #define HAVE_MEMCMP	1
 //#define HAVE_STRLEN	1
 //#define HAVE_STRCHR	1
